@@ -60,3 +60,22 @@ console.log(random); //you get ["wendy", "cheryl", 24, 22]
 
 let age = null;
 console.log(age, age + 3, `the age is ${age}`); //you get null 3 "the age is null"
+
+
+//BOOLEANS
+
+//booleans and comparisons
+
+console.log(true,false); //gives true false
+console.log(true, false, "true", "false"); //gives true false "true" "false"
+
+//methods can return booleans
+
+let email = 'wendy@thenetninja.co.ke';
+
+let result = email.includes('@');
+console.log(result); //gives true
+
+let result2 = email.includes('!');
+console.log(result2); //gives false
+
