@@ -64,18 +64,26 @@ console.log(age, age + 3, `the age is ${age}`); //you get null 3 "the age is nul
 
 //BOOLEANS
 
-//booleans and comparisons
+///booleans and comparisons
 
 console.log(true,false); //gives true false
 console.log(true, false, "true", "false"); //gives true false "true" "false"
 
-//methods can return booleans
+///methods can return booleans
 
 let email = 'wendy@thenetninja.co.ke';
 
-let result = email.includes('@');
-console.log(result); //gives true
+// let result = email.includes('@');
+// console.log(result); //gives true
 
 let result2 = email.includes('!');
 console.log(result2); //gives false
 
+let names = ['wendy', 'cheryl', 'wanja'];
+let result = names.includes('cheryl');
+console.log(result); //gives true
+
+let result3 = names.includes('luigi');
+console.log(result3); //gives false
+
+///comparison operators
