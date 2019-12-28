@@ -108,3 +108,13 @@ console.log(name > 'Wendy'); //gives true because small letter w is greater than
 console.log(name > 'Crystal'); //gives true because all lower case letters are greater than all uppercase letters
 console.log(name > 'Zain'); //gives true
 console.log(name < 'Cheryl'); //gives false
+
+//loose comparison (different types can be equal)
+
+console.log(age == 25); //gives true
+console.log(age == '25'); //gives true
+console.log(age != 25); //gives false
+console.log(age != '25'); //gives false
+
+//strict comparison (different types cannot be equal)
+
