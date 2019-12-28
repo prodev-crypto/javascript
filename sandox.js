@@ -76,12 +76,12 @@ let email = 'wendy@thenetninja.co.ke';
 // let result = email.includes('@');
 // console.log(result); //gives true
 
-let result2 = email.includes('!');
-console.log(result2); //gives false
+// let result2 = email.includes('!');
+// console.log(result2); //gives false
 
 let names = ['wendy', 'cheryl', 'wanja'];
-let result = names.includes('cheryl');
-console.log(result); //gives true
+// let result = names.includes('cheryl');
+// console.log(result); //gives true
 
 let result3 = names.includes('luigi');
 console.log(result3); //gives false
@@ -123,3 +123,37 @@ console.log(age === '25'); //gives false
 console.log(age !==25); //gives false
 console.log(age !== '25'); //gives true
 
+//EXPLICIT TYPE CONVERSION
+
+let score = '100';
+// console.log(score + 1); //gives 1001 because the number 1 was concatenated into the string '100'.
+
+score = Number(score); //converts the string '100' into the number 100
+console.log(score + 1); //gives 101
+
+// let result = 'hello';
+// result = Number(result);
+// console.log(result); //gives NaN because it does not make sense to convert 'hello' into a number
+
+let result2 = String(50);
+console.log(result2, typeof result2); //gives 50 string meaning the number 50 was converted to a string
+
+let result = Boolean(100);
+console.log(result, typeof result); //gives true boolean
+
+let result4 = Boolean(-5);
+console.log(result4, typeof result4); //gives true boolean
+
+let result5 = Boolean(0);
+console.log(result5, typeof result5); //false boolean
+//So all positive and negative values are truthy and zero is falsy.
+
+let result6 = Boolean('0');
+console.log(result6, typeof result6); //gives true boolean
+
+let result7 = Boolean('');
+console.log(result7, typeof result7); //gives false boolean
+
+let result8 = Boolean('cheryl');
+console.log(result8, typeof result8); //gives true boolean
+//Therefore strings of any length give a true boolean unless empty
