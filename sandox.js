@@ -58,8 +58,8 @@ console.log(random); //you get ["wendy", "cheryl", 24, 22]
 // let age;
 // console.log(age, age + 3, `the age is ${age}`); // you get undefined, NaN, the age is undefined
 
-let age = null;
-console.log(age, age + 3, `the age is ${age}`); //you get null 3 "the age is null"
+// let age = null;
+// console.log(age, age + 3, `the age is ${age}`); //you get null 3 "the age is null"
 
 
 //BOOLEANS
@@ -87,3 +87,15 @@ let result3 = names.includes('luigi');
 console.log(result3); //gives false
 
 ///comparison operators
+
+let age = 25;
+
+console.log(age == 25); //gives true
+console.log(age == 30); //gives false
+console.log(age != 25); //gives false
+console.log(age != 30); //gives true 
+console.log(age > 20); //gives true
+console.log(age < 20); //gives false
+console.log(age <= 25); //gives true
+console.log(age >= 25); //gives true
+
