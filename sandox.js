@@ -116,5 +116,10 @@ console.log(age == '25'); //gives true
 console.log(age != 25); //gives false
 console.log(age != '25'); //gives false
 
-//strict comparison (different types cannot be equal)
+//strict comparison (different types cannot be equal) //compares type and value
+
+console.log(age === 25); //gives true
+console.log(age === '25'); //gives false
+console.log(age !==25); //gives false
+console.log(age !== '25'); //gives true
 
