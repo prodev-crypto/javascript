@@ -99,3 +99,12 @@ console.log(age < 20); //gives false
 console.log(age <= 25); //gives true
 console.log(age >= 25); //gives true
 
+let name = 'wendy';
+
+console.log(name == 'wendy'); //gives true
+console.log(name == 'Wendy'); //gives false because of the capital W
+console.log(name > 'crystal'); //gives true because w is greater than c in the alphabet
+console.log(name > 'Wendy'); //gives true because small letter w is greater than capital letter W
+console.log(name > 'Crystal'); //gives true because all lower case letters are greater than all uppercase letters
+console.log(name > 'Zain'); //gives true
+console.log(name < 'Cheryl'); //gives false
