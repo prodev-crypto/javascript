@@ -157,3 +157,8 @@ console.log(result7, typeof result7); //gives false boolean
 let result8 = Boolean('cheryl');
 console.log(result8, typeof result8); //gives true boolean
 //Therefore strings of any length give a true boolean unless empty
+
+//IMPLICIT CONVERSION
+
+//This is where js did the conversion for us behind the scenes when we were using == to compare.
+//They will come more into play in the future.
