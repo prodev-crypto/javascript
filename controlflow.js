@@ -1,6 +1,6 @@
 ///CONTROL FLOWS
 
-//For loop
+//FOR LOOP
 
 for (let i = 0; i < 5; i++) {
 	console.log('in loop', i);
@@ -12,8 +12,27 @@ const names = ['wendy', 'betty', 'cheryl'];
 
 for (let b = 0; b < names.length; b++) {
 	// console.log(b); //gives 0 1 2 in vertical order
-	// console.log(names[b]); //gives wendy betty cheryl in vertical order
+	// console.log(names[b]); //gives wendy 
+																	//betty 
+																	//cheryl
 
 	let html = `<div>${names[b]}</div>`;
-	console.log(html);
+	console.log(html); //gives <div>wendy</div> 
+														//<div>betty</div> 
+														//<div>cheryl</div>
+}
+
+
+
+//WHILE LOOP
+
+let c = 0;
+
+while(c < 5) {
+	console.log('in loop:', c); //you get in loop: 0 
+																			//in loop: 1 
+																			//in loop: 2
+																			//in loop: 3 
+																			//in loop: 4
+	c++;
 }
