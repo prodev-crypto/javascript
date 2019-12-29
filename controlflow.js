@@ -30,9 +30,44 @@ let c = 0;
 
 while(c < 5) {
 	console.log('in loop:', c); //you get in loop: 0 
-																			//in loop: 1 
-																			//in loop: 2
+	c++;																//in loop: 1 
+}																			//in loop: 2
 																			//in loop: 3 
 																			//in loop: 4
-	c++;
-}
+	
+
+
+const countries = ['kenya', 'italy', 'tanzania'];
+
+let d = 0;
+
+while(d < countries.length) {
+	console.log(countries[d]); //you get kenya
+	d++;														   //italy
+}																	   //tanzania
+
+
+//DO WHILE LOOP
+
+let f = 5;
+
+do{
+	console.log('val of f is: ', f);
+	f++;
+} while(f<5); //we get val of i is 5
+
+let g = 4;
+
+do{
+	console.log('val of g is: ', g);
+	g++;
+} while(g<5); //gives val of g is 4
+
+let h = 3;
+
+do{
+	console.log('val of h is: ', h);
+	h++;
+} while(h<5); //gives the val of h is 3
+												//val of h is 4
+												//gives two values because the loop runs twice till h is 5.
