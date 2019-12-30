@@ -218,3 +218,31 @@ for(let i = 0; i < scores2.length; i++) {
 		break; //breaks the loop at 100 so we'll no longer see 98, 99 and 120 in the console
 	}
 }
+
+
+///SWITCH STATEMENTS
+
+const grade = 'D';
+
+switch(grade) {
+	case 'A':
+		console.log('you got an A!');
+		break;
+	case 'B':
+		console.log('you got a B!');
+		break;
+	case 'C':
+		console.log('you got a C!');
+		break;
+	case 'D':
+		console.log('you got a D!');
+		break;
+	case 'E':
+		console.log('you got an E!');
+		break;
+	default:
+		console.log('not a valid grade');
+}
+//Switch statements use strict equality ===
+
+
