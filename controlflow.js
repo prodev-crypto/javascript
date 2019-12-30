@@ -183,3 +183,38 @@ let user = false;
 if(!user) {
 	console.log('you must be logged in to continue'); //gives this
 }
+
+
+///BREAK AND CONTINUE
+
+///BREAK
+
+const scores = [50, 25, 75, 0, 30, 100, 98, 99, 120];
+
+for(let i = 0; i < scores.length; i++) {
+
+	console.log('your score: ', scores[i]);
+
+	if(scores[i] === 100) {
+		console.log('congrats, you got the highest score!'); //gives this
+		break; //breaks the loop at 100 so we'll no longer see 98, 99 and 120 in the console
+	}
+}
+
+///CONTINUE
+
+const scores2 = [50, 25, 0, 30, 100, 98, 120];
+
+for(let i = 0; i < scores2.length; i++) {
+
+	if(scores2[i] === 0) {
+		continue; //basically, the 0 score won't be logged into the console. that's an embarrassing score!
+	} 
+
+	console.log('your score: ', scores2[i]);
+
+	if(scores2[i] === 100) {
+		console.log('congrats, you got the highest score!'); //gives this
+		break; //breaks the loop at 100 so we'll no longer see 98, 99 and 120 in the console
+	}
+}
