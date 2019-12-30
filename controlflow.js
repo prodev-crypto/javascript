@@ -126,12 +126,46 @@ if(password2.length > 12 && password2.includes('@')) {
 	console.log('stop being an idiot and type a password');
 } 
 
+
 const password3 = 'password123456789'
 
 if(password3.length > 12 && password3.includes('@')) {
 	console.log('that is a strong as hell password');
 } else if(password3.length >= 8) {
 	console.log('that is a kinda strong password'); //gives this and not one because @ is not included
+} else {
+	console.log('stop being an idiot and type a password');
+}
+
+
+const password4='p@ss'
+
+if(password4.length > 12 && password4.includes('@')) {
+	console.log('that is a strong as hell password');
+} else if(password4.length >= 8 || password4.includes('@')) {
+	console.log('that is a strong password'); //runs this because there's an @ and the or.
+} else {
+	console.log('stop being an idiot and type a password');
+}
+
+
+const password5='p@ss' //let's add another condition to the or
+
+if(password5.length > 12 && password5.includes('@')) {
+	console.log('that is a strong as hell password');
+} else if(password5.length >= 8 || password4.includes('@') && password5.length >= 5) {
+	console.log('that is a strong password'); 
+} else {
+	console.log('stop being an idiot and type a password'); //this one runs
+}
+
+
+const password6='p@sso' 
+
+if(password6.length > 12 && password6.includes('@')) {
+	console.log('that is a strong as hell password');
+} else if(password6.length >= 8 || password6.includes('@') && password6.length >= 5) {
+	console.log('that is a strong password');  //this one runs
 } else {
 	console.log('stop being an idiot and type a password');
 }
