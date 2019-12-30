@@ -116,7 +116,7 @@ if(password.length > 12) {
 
 //we use || for OR and && for AND
 
-const password2 = 'p@ss1515155111'
+const password2 = 'p@ss1515155111';
 
 if(password2.length > 12 && password2.includes('@')) {
 	console.log('that is a strong as hell password'); //gives this
@@ -127,7 +127,7 @@ if(password2.length > 12 && password2.includes('@')) {
 } 
 
 
-const password3 = 'password123456789'
+const password3 = 'password123456789';
 
 if(password3.length > 12 && password3.includes('@')) {
 	console.log('that is a strong as hell password');
@@ -138,7 +138,7 @@ if(password3.length > 12 && password3.includes('@')) {
 }
 
 
-const password4='p@ss'
+const password4='p@ss';
 
 if(password4.length > 12 && password4.includes('@')) {
 	console.log('that is a strong as hell password');
@@ -149,7 +149,7 @@ if(password4.length > 12 && password4.includes('@')) {
 }
 
 
-const password5='p@ss' //let's add another condition to the or
+const password5='p@ss'; //let's add another condition to the or
 
 if(password5.length > 12 && password5.includes('@')) {
 	console.log('that is a strong as hell password');
@@ -160,7 +160,7 @@ if(password5.length > 12 && password5.includes('@')) {
 }
 
 
-const password6='p@sso' 
+const password6='p@sso'; 
 
 if(password6.length > 12 && password6.includes('@')) {
 	console.log('that is a strong as hell password');
@@ -168,4 +168,18 @@ if(password6.length > 12 && password6.includes('@')) {
 	console.log('that is a strong password');  //this one runs
 } else {
 	console.log('stop being an idiot and type a password');
+}
+
+
+///LOGICAL NOT (!)
+
+//When we place ! before a boolean it reverses the boolean
+
+console.log(!true); //gives false
+console.log(!false); //gives true
+
+let user = false;
+
+if(!user) {
+	console.log('you must be logged in to continue'); //gives this
 }
