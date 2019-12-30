@@ -246,3 +246,46 @@ switch(grade) {
 //Switch statements use strict equality ===
 
 
+///VARIABLES AND BLOCK SCOPE
+
+let amount = 30;
+
+if(true) {
+	console.log('inside 1st code block: ', amount); 
+}
+
+console.log('outside code block: ', amount); 
+
+//gives inside 1st code block: 30
+       //outside code block: 30
+//this is a global scope
+
+let amount2 = 35;
+
+if(true) {
+	amount2 = 40;
+	console.log('inside 1st code block: ', amount2); 
+}
+
+console.log('outside code block: ', amount2); 
+
+//gives inside 1st code block: 40
+			//outside code block: 40
+
+const amount3 = 55;
+
+if(true) {
+	const amount3 = 65;
+	const namee ='cheryl';
+	console.log('inside 1st code block: ', amount3, namee); //gives inside 1st block: 65 cheryl
+
+	if(true) {
+		const amount3 = 75;
+		var test = 'hello';
+		console.log('inside 2nd code block: ', amount3, test); //gives inside 2nd code block 75 hello
+	}
+}
+
+console.log('outside code block: ', amount3, test); //gives 55 hello
+
+//therefore var can be accessed outside the code block unlike let.
