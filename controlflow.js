@@ -1,6 +1,6 @@
 ///CONTROL FLOWS
 
-//FOR LOOP
+///FOR LOOP
 
 for (let i = 0; i < 5; i++) {
 	console.log('in loop', i);
@@ -24,7 +24,7 @@ for (let b = 0; b < names.length; b++) {
 
 
 
-//WHILE LOOP
+///WHILE LOOP
 
 let c = 0;
 
@@ -47,7 +47,7 @@ while(d < countries.length) {
 }																	   //tanzania
 
 
-//DO WHILE LOOP
+///DO WHILE LOOP
 
 let f = 5;
 
@@ -71,3 +71,67 @@ do{
 } while(h<5); //gives the val of h is 3
 												//val of h is 4
 												//gives two values because the loop runs twice till h is 5.
+
+
+///IF STATEMENTS
+
+const age = 20;
+
+if(age > 20) {
+	console.log('you are over 20 years old'); //nothing shows because age is not greater than 20
+}
+
+if(age > 15) {
+	console.log('you are over 15 years old'); //gives you are over 15 years old
+}
+
+const towns = ['nairobi', 'kisumu', 'machakos', 'mombasa'];
+
+if(towns.length > 3) {
+	console.log("that's a lot of towns"); //gives that's a lot of towns
+}
+
+
+//IF ELSE STATEMENTS
+
+const password = 'judge';
+
+if(password.length >= 8) {
+	console.log('passsword is long enough');
+} else {
+	console.log('password is not long enough'); // gives the second one because password is only four characters long
+}
+
+//Using if else to check multiple conditions
+
+if(password.length > 12) {
+	console.log('that is a strong as hell password');
+} else if(password.length >= 8) {
+	console.log('that is a kinda strong password');
+} else {
+	console.log('stop being an idiot and type a password');
+}
+
+///Use if else to evaluate more than one condition in the same check
+
+//we use || for OR and && for AND
+
+const password2 = 'p@ss1515155111'
+
+if(password2.length > 12 && password2.includes('@')) {
+	console.log('that is a strong as hell password'); //gives this
+} else if(password2.length >= 8) {
+	console.log('that is a kinda strong password');
+} else {
+	console.log('stop being an idiot and type a password');
+} 
+
+const password3 = 'password123456789'
+
+if(password3.length > 12 && password3.includes('@')) {
+	console.log('that is a strong as hell password');
+} else if(password3.length >= 8) {
+	console.log('that is a kinda strong password'); //gives this and not one because @ is not included
+} else {
+	console.log('stop being an idiot and type a password');
+}
