@@ -24,9 +24,88 @@ const speak = function() {
 ///ARGUMENTS AND PARAMETERS
 
 const talk = function(name) { //here, name is the parameter.
-  console.log(`good day ${name}`);
+  console.log(`good day ${name}!`);
 };
 
 talk('wendy'); // gives good day wendy (here, wendy is an argument of the function)
 
 
+///PASSING MORE THAN ONE PARAMETER
+
+const speak2 = function(name2, time) {
+  console.log(`good ${time} ${name2}`);
+};
+
+speak2('cheryl', 'morning'); //gives good day wendy
+
+
+///RETURNING VALUES
+
+// const calcArea = function(radius) {
+//   let area = 3.14 * radius**2;
+//   return area;
+// };
+
+// const area = calcArea(5);
+ 
+// console.log(area); //gives 78.5
+
+//or we can write it like this:
+
+const calcArea = function(radius) {
+  return 3.14 * radius**2;
+};
+
+const area = calcArea(5);
+
+console.log(area); //gives 78.5
+
+//we can use the area in another function
+
+const calcVol = function (area) {
+  
+};
+
+calcVol(area);
+
+
+///ARROW FUNCTIONS
+
+//Offer us a cleaner and shorter way to write functions
+
+const calcArea2 = (radius) => {
+  return 3.14 * radius**2;
+};
+
+const area2 = calcArea2(5);
+
+console.log(area2); //gives 78.5
+
+//if it is one parameter we can write:
+
+const calcArea3 = radius => 3.14 * radius**2;
+
+const area3 = calcArea3(5);
+
+console.log(area3); //gives 78.5
+
+
+///PRACTISE ARROW FUNCTIONS
+
+const bill = function(products,tax ) {
+  let total = 0;
+  for(let i = 0; i < products.length; i++) {
+    total += products[i] + products[i] * tax;
+  }
+  return total;
+}
+
+// console.log(bill([10, 15, 30], 0.2))
+// // bill([10, 15, 30], 0.2);
+
+const result = bill([10, 15, 30], 0.2);
+console.log(result); //gives 66
+
+const bill2 = (products, tax) => {
+
+}
