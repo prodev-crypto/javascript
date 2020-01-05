@@ -109,3 +109,21 @@ console.log(result); //gives 66
 const bill2 = (products, tax) => {
 
 }
+
+///Difference between invoking functions and methods
+
+const lotion = 'Luron';
+
+//functions
+
+const greetOne = () => 'hey, sunshine'
+
+let resultOne = greetOne();
+console.log(resultOne);
+
+//methods
+
+let resultTwo = lotion.toUpperCase();
+console.log(resultTwo); //methods are invoked during dot notation
+
+//so the difference is where they are defined and how they are invoked.
